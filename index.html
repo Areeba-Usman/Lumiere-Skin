@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumière — Skincare Rituals</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="page-transition"></div>
+
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" onclick="closeMobileMenu()">Home</a>
+        <a href="#about" onclick="closeMobileMenu()">Our Story</a>
+        <a href="#products" onclick="closeMobileMenu()">Shop</a>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-logo">Lumière</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#products">Shop</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow">Clean. Conscious. Crafted.</div>
+            <h1 class="hero-title">
+                Skin that tells
+                <em>your story,</em>
+                beautifully.
+            </h1>
+            <p class="hero-desc">
+                I started Lumière because I was tired of choosing between luxury and clean ingredients. You shouldn't
+                have to. Every product here is a little ritual — something you'll actually look forward to every
+                morning.
+            </p>
+            <div class="hero-actions">
+                <a href="#products" class="btn-main">Explore Products</a>
+                <a href="#about" class="btn-ghost">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrap">
+                <div class="img-box-main">
+                    <img src="heroimg.jpg" alt="Skincare ritual" loading="lazy" />
+                </div>
+                <div class="img-tag">Est. 2024 · Lahore</div>
+                <div class="img-box-accent">
+                    <div class="accent-num">100%</div>
+                    <div class="accent-label">Clean ingredients, always</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span class="marquee-item">Cruelty Free</span>
+            <span class="marquee-item">Dermatologist Tested</span>
+            <span class="marquee-item">No Harmful Chemicals</span>
+            <span class="marquee-item">Sustainably Sourced</span>
+            <span class="marquee-item">Handcrafted with Care</span>
+            <span class="marquee-item">Cruelty Free</span>
+            <span class="marquee-item">Dermatologist Tested</span>
+            <span class="marquee-item">No Harmful Chemicals</span>
+            <span class="marquee-item">Sustainably Sourced</span>
+            <span class="marquee-item">Handcrafted with Care</span>
+        </div>
+    </div>
+
+
+
+
+    <section id="about">
+        <div class="about-visual reveal-left">
+            <div class="about-img-stack">
+                <div class="aimg1">
+                    <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&auto=format&fit=crop&q=80"
+                        alt="Skincare ingredients" loading="lazy" />
+                </div>
+                <div class="aimg2">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&auto=format&fit=crop&q=80"
+                        alt="Natural skincare" loading="lazy" />
+                </div>
+                <div class="about-quote-box">
+                    <p>"Your skin deserves honesty, not just pretty packaging."</p>
+                    <span>— Founder's Note</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="reveal">
+            <div class="section-label">Our Story</div>
+            <h2 class="section-title">Born from a search for something <em>real.</em></h2>
+            <p class="about-story">
+                Honestly? This brand started in my kitchen. I had sensitive skin that reacted to almost everything on
+                the shelf — fancy labels, impossible ingredient lists, and a whole lot of disappointment.
+            </p>
+            <p class="about-story">
+                So I went back to basics. I read, I researched, I tested. And slowly, I started understanding what my
+                skin actually needed — not what the marketing said it needed. <strong>That's when Lumière
+                    began.</strong>
+            </p>
+            <p class="about-story">
+                Every formula here is something I personally use. If it didn't work for me, it never made it into the
+                line. Simple as that. No fillers, no shortcuts — just ingredients that genuinely care for your skin.
+            </p>
+            <div class="values-row">
+
+                <div class="val-item">
+                    <div class="val-num">12</div>
+                    <div class="val-text">ingredients max<br />per product</div>
+                </div>
+                <div class="val-item">
+                    <div class="val-num">0</div>
+                    <div class="val-text">synthetic<br />fragrances</div>
+                </div>
+                <div class="val-item">
+                    <div class="val-num">∞</div>
+                    <div class="val-text">care put into<br />every batch</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="products-header reveal">
+            <div>
+                <div class="section-label">Products</div>
+                <h2 class="section-title">Small rituals,<br />big difference.</h2>
+            </div>
+            <p>Each product is designed to do one thing — and do it really, really well. No 12-step routines. Just what
+                your skin actually needs.</p>
+        </div>
+        <div class="products-grid">
+
+            <div class="product-card reveal" onclick="openPopup('serum')">
+                <div class="product-img">
+                    <img src="serumimg.jpg" alt="Dewy Glow Serum" loading="lazy" />
+                    <button class="ing-peek" onclick="event.stopPropagation(); openPopup('serum')">View Ingredients
+                        ✦</button>
+                </div>
+                <div class="product-info">
+                    <div class="product-tag">Bestseller</div>
+                    <div class="product-name">Dewy Glow Serum</div>
+                    <p class="product-desc">Hyaluronic acid + rosehip oil. Goes on light, sinks in deep. I wear this
+                        under everything — even on lazy days when nothing else makes it on.</p>
+                    <div class="product-footer">
+                        <div class="product-price">Rs. 2,400</div>
+                        <button class="product-btn" onclick="event.stopPropagation()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" onclick="openPopup('cleanser')">
+                <div class="product-img">
+                    <img src="skincare.jpg" alt="Calm Clean Cleanser" loading="lazy" />
+                    <button class="ing-peek" onclick="event.stopPropagation(); openPopup('cleanser')">View Ingredients
+                        ✦</button>
+                </div>
+                <div class="product-info">
+                    <div class="product-tag">For Sensitive Skin</div>
+                    <div class="product-name">Calm &amp; Clean Cleanser</div>
+                    <p class="product-desc">Gentle enough for morning, thorough enough for night. No tight feeling after
+                        — just clean, soft skin that actually feels comfortable.</p>
+                    <div class="product-footer">
+                        <div class="product-price">Rs. 1,800</div>
+                        <button class="product-btn" onclick="event.stopPropagation()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" onclick="openPopup('cream')">
+                <div class="product-img">
+                    <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&auto=format&fit=crop&q=80"
+                        alt="Overnight Repair Cream" loading="lazy" />
+                    <button class="ing-peek" onclick="event.stopPropagation(); openPopup('cream')">View Ingredients
+                        ✦</button>
+                </div>
+                <div class="product-info">
+                    <div class="product-tag">Night Ritual</div>
+                    <div class="product-name">Overnight Repair Cream</div>
+                    <p class="product-desc">This is the one you'll reach for every single night. Shea butter, ceramides,
+                        and a little bit of magic. Wake up and actually notice the difference.</p>
+                    <div class="product-footer">
+                        <div class="product-price">Rs. 2,900</div>
+                        <button class="product-btn" onclick="event.stopPropagation()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">Lumière</div>
+                <div class="footer-tagline">"Because good skin starts with honest care."</div>
+            </div>
+            <div class="footer-links-group">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#products">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-group">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Email Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2025 Lumière Skincare. All rights reserved.</div>
+            <div class="footer-made">Made with intention, not shortcuts.</div>
+        </div>
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopupOutside(event)">
+        <div class="popup-box">
+            <button class="popup-close" onclick="closePopup()">✕</button>
+            <div class="popup-tag" id="popupTag"></div>
+            <div class="popup-name" id="popupName"></div>
+            <div class="ing-list" id="ingList"></div>
+            <div class="popup-note" id="popupNote"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
